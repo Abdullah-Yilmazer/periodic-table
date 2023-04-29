@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Periyodik Tablo</title>
+   <script src="JQuery/jquery-3.6.3.min.js"></script>
+   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+   <style>
+      *,
+      *::after,
+      *::before {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      #main {
+         display: grid;
+         margin: auto;
+         width: calc(18*(50px + 2px));
+         grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+         grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+      }
+
+      .element {
+         border: 1px solid var(--color);
+         width: 50px;
+         height: 50px;
+         font-size: xx-small;
+      }
+
+      .panelMain {
+         display: none;
+         background: #00000034;
+         position: absolute;
+         width: 100%;
+         min-height: 1000px;
+         top: 0;
+         left: 0;
+         transition: all 1s;
+      }
+
+      .panel {
+         display: block;
+         position: absolute;
+         top: 0;
+         left: -400px;
+         transition: all 1s;
+         width: 400px;
+         min-height: 1000px;
+         height: max-content;
+         background: rgb(153, 151, 151);
+      }
+
+      .dropdown {
+         position: relative;
+         display: block;
+         width: 100%;
+         transition: all 1s;
+      }
+
+      .dropdown>input[type="checkbox"] {
+         position: absolute;
+         visibility: hidden;
+      }
+
+      .dropdown>label {
+         display: inline-block;
+         width: 100%;
+         padding: 6px 15px;
+         color: #333;
+         line-height: 1.5em;
+         text-decoration: none;
+         border: 1px solid #8c8c8c;
+         font-size: 2.5rem;
+         cursor: pointer;
+         -webkit-border-radius: 3px;
+         -moz-border-radius: 3px;
+         border-radius: 3px;
+      }
+
+      .dropdown>label:hover {
+         background: #8c8c8c;
+      }
+
+      .dropdown>ul {
+         position: relative;
+         z-index: 999;
+         font-size: 2rem;
+         background: #fff;
+         margin: 0;
+         list-style: none;
+         width: 100%;
+         max-height: 0;
+         overflow-y: scroll;
+         transform-origin: top center;
+         transition: all .5s;
+      }
+
+      .dropdown>input[type="checkbox"]:checked~ul {
+         max-height: 1000px;
+      }
+   </style>
+</head>
+
+
+<body>
+   <div class="panelMain">
+
+      <div class="panel">
+         
+      </div>
+   </div>
+   <main id="main">
+
+   </main>
+</body>
+<!-- Slidebar şablon --> 
+<!--   
+<div class="dropdown">
+   <input type="checkbox" id="dropdownCheckbox" name="dropdownCheckbox">
+   <label for="dropdownCheckbox" data-toggle="dropdown">Atom</label>
+   <ul>
+      <li>Coffe</li>
+      <li>Coverag</li>
+      <li>Covfef</li>
+   </ul>
+</div> 
+-->
+
+
+<!-- Temel şablon -->
+<!--
+<div class="element">
+   <span class="atomNumarasi"></span>
+   <span class="sembol"></span>
+   <span class="isim"></span>
+   <span class="atomKutlesi"></span>
+</div> 
+-->
+
+<script>
+   $(function () {
+
+      // Elementlerin şablonu
+      const element = `
+      <div class="element">
+         <span class="atomnumarasi"></span>
+         <span class="sembol"></span>
+         <span class="isim"></span>
+         <span class="atomKutlesi"></span>
+      </div>
+      `;
+
+      // Main e 119 adet element ekliyo
+      for (let i = 0; i < 119; i++) {
+         document.getElementById("main").innerHTML += element
+      }
+   });
+
+</script>
+<script src="js.js"></script>
+
+</html>
