@@ -1,0 +1,14 @@
+:root {
+
+  --body-bg: #002346;
+  --panel-bg: #828bb3;
+  --dropdown-bg: #bbbbbbc3;
+  --dropdown-bg-hover: #fff;
+  --dropdown-content-bg: #7777779d;
+  --element-bg: #fff;
+  --element-color: #fff;
+  --element-size: 55px;
+  --element-font-size: 55px;
+  --panel-left: 0;
+  --panel-top: 0;
+}
