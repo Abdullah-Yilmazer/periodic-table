@@ -29,7 +29,7 @@ To run this project, you need to have the following software installed on your m
 
 ## Screenshots
 
-![Example](example.gif)
+![Example](https://github.com/Abdullah-Yilmazer/periodic-table/blob/React/exampla.gif)
 
 ## Data Source
 
