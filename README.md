@@ -20,6 +20,10 @@ The Periodic Table app provides an interactive way to explore and learn about ch
 - Click on an element to see its properties such as atomic number, symbol, atomic weight, etc.
 - Interactive design for easy navigation and exploration.
 
+## Other Versions
+
+This project is also written in vanilla JavaScript on a different branch. [You can access it here.](https://github.com/Abdullah-Yilmazer/periodic-table/tree/master)
+
 ## Usage
 
 To use the application, follow these steps:
