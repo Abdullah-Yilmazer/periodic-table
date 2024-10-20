@@ -1,9 +1,13 @@
 <p align="center">
   <img src="./screenshot.png" alt="Screenhot"/>
-</p># Periodic Table App
+</p>
+
+# Periodic Table App
 
 This project is a Periodic Table application built with React. The application provides visual representation of elements from the periodic table and retrieves detailed information of each element from an internal file. This allows easy access and display of element properties.
 
+##Demo
+You can see a live demo of the application [here](https://abdullah-yilmazer.github.io/periodic-table/).
 
 ## Overview
 
