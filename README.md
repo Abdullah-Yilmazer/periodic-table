@@ -1,9 +1,14 @@
 <p align="center">
   <img src="./screenshot.png" alt="Screenhot"/>
-</p># Periodic Table App
+</p>
+
+# Periodic Table App
 
 This project is a Periodic Table application built with vanilla JavaScript and jquery. The application provides visual representation of elements from the periodic table and retrieves detailed information of each element from an internal file. This allows easy access and display of element properties.
 
+## Demo
+
+You can see a live demo of the application [here](https://abdullah-yilmazer.github.io/periodic-table/).
 
 ## Overview
 
@@ -14,6 +19,10 @@ The Periodic Table app provides an interactive way to explore and learn about ch
 - View the periodic table with detailed information about each element.
 - Click on an element to see its properties such as atomic number, symbol, atomic weight, etc.
 - Interactive design for easy navigation and exploration.
+
+## Other Versions
+
+This project was also written in React on a different branch. [You can access it here.](https://github.com/Abdullah-Yilmazer/periodic-table/tree/React)
 
 ## Required Software
 Requirements
